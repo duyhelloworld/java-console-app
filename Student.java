@@ -1,4 +1,4 @@
-public class Student implements Comparable{
+public class Student {
     private Long id;
     private static Long numInstance = 0l;
     private Long code;
@@ -67,11 +67,6 @@ public class Student implements Comparable{
     @Override
     public String toString() {
         return getId() + "\t"+ this.getCode() + "\t" + "\t"+ this.getName() + "\t" + "\t" + this.getBirth() + "\t" +"\t" + this.getAverageMark();
-    }
-
-    @Override
-    public int compareTo(Object arg0) {
-        return 0;
     }
 
 }
